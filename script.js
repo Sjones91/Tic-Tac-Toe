@@ -31,11 +31,8 @@ var tiles = {
      7:"",
      8:""
 }
-
 var winner = "";
-
 //loop through the board and add a click event listener which runs the function takeTurn//
-
 function addListeners() {
      for (let i = 0; i < gameBoard.length; i++ ) {
      gameBoard[i].addEventListener("click", takeTurn)
