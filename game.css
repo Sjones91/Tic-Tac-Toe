@@ -1,0 +1,121 @@
+/*---------------------------Main Styles-----------------------------*/
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    background-image: linear-gradient(180deg, rgb(62, 175, 62), rgb(79, 175, 79) );
+    min-height: 100VH;
+    background-size: cover;
+    color:azure;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+
+}
+.d-f-col {
+    display: flex;
+    flex-direction: column;
+}
+.pageContent {
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    flex-grow: 0.75;
+}
+h1 {
+    font-size: 3rem;
+    margin: 10px auto;
+}
+h2 {
+    margin: 10px auto;
+    font-size: 2rem;
+}
+.tile {
+    background-color: rgba(255, 255, 255, 0.323);
+    height:130px;
+    width:130px;
+    border-radius: 5px;
+}
+.gameContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin: auto;
+}
+.options {
+    z-index: 6;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(42, 116, 69, 0.72);
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    display: block;
+}
+.choice:hover {
+    opacity: 80%;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+/*---------------------------Game Styles-----------------------------*/
+@keyframes fadeIn{
+    0% {opacity: 0%;} 
+    100% {opacity: 100%;}
+}
+.cross {
+    background-image: url(images/cross.png);
+    background-size: cover;
+    animation: fadeIn ease-in 1s;
+}
+.naught {
+    background-image: url(images/ring.png);
+    background-size: cover;
+    animation: fadeIn ease-in 1s;
+}
+.resultsCard {
+    z-index: 6;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(42, 116, 69, 0.72);
+    border-radius: 10px;
+    color: white;
+    margin: auto;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    display: none;
+}
+.message {
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 150px;
+}
+.winnerResult1 {
+    font-size: 4rem;
+}
+.button {
+    background:linear-gradient(90deg, rgba(181, 243, 204, 0.72), rgba(77, 186, 117, 0.72));
+    width: 40%;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    font-size: 2rem;
+    padding: 5px;
+    color: white;
+}
+.button:hover {
+    opacity: 80%;
+
+}
+
+
+
+/*---------------------------Psuedo Classes-----------------------------*/
